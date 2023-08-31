@@ -1,2 +1,48 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Add this to include padding and border in width/height calculation */
+}
 
-/* Your CSS Code here. */
+/* Center the content vertically and horizontally */
+body {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* Apply styles to the movie poster */
+.moviePic {
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Automatically adjust height while maintaining aspect ratio */
+  opacity: 0.8;
+  position: relative; /* Establish positioning context for top property */
+  top: 20px; /* Adjust to position the image as desired */
+}
+
+/* Apply styles to the movie description */
+.movieDetail {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  padding: 20px; /* Adjust padding as needed */
+  position: relative; /* Establish positioning context for top property */
+  top: 20px; /* Adjust to position the description as desired */
+}
+
+/* Apply styles to the h2 tag */
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 0; /* Remove default margin */
+  color: #333;
+  position: relative; /* Establish positioning context for top property */
+  top: 15px; /* Adjust to position the h2 tag as desired */
+}
+span {
+  color: blue;
+}
